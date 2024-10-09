@@ -1,0 +1,404 @@
+ 
+  /* Basic reset and layout */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+   
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;  overflow: hidden; /* Ensure the container does not cause overflow */
+    min-height: 100vh;
+    min-width: 100vw ;
+}
+
+/* Container for login form */
+.login-container {
+   margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 19px ;
+    padding-right: 35px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    border: pink 2.5px solid ;
+}
+
+/* Login form title */
+.login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Anton', sans-serif;
+}
+
+/* Input styles */
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Login button */
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Register link */
+.register-link {
+    font-size: 14px;
+    color: #777;
+}
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}
+/* login.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('download.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    width : 900px ;
+}
+
+.register-here {
+
+    border: pink 2.5px solid;   
+    border-radius: 5px;
+    width: 400px;
+    height: 350px; /* Adjust height if needed */
+    padding: 4%; /* Consider adjusting this */
+    margin-top: 9%; /* Adjust margin as needed */
+    margin-right: -75px;
+}
+
+
+.register-title {
+    color: black;
+    margin-left: 22%;
+    margin-top: -4px; /* Reduce this to lessen the spacing */
+}
+
+.register-button{
+    background-color: #007bff;
+    width: 60px;
+    height: 33px;
+    color : white ;
+    margin-left: 43%;   
+}
+.toggle-form{
+    padding-top: 3.3%;
+}
+ 
+.input-group{
+    color : pink ;
+}
+ 
+/* Targeting the label for the username field */
+label[for="register-username"] {
+    color: grey; /* Example color: orange-red */
+    max-width:  fit-content;
+    margin-left: 41%; 
+}
+
+
+/* Targeting the label for the email field */
+label[for="register-email"] {
+    color: grey; /* Example color: lime green */
+    margin-left: 45%; 
+    
+}
+
+/* Targeting the label for the password field */
+label[for="register-password"] {
+    color: grey; /* Example color: dodger blue */
+       margin-left: 43%; 
+}
+
+.register-link{
+    margin-top: 4%;
+}
+.toggle-form{
+    margin-left: 20% ;
+}
+ 
+
+ 
+/* Sidebar styling */
+.sidebar {
+    width: 260px;
+    background: #827e7e94;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* Toggle button styling */
+.toggle-button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 800px;
+    min-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: #fff;
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable scrolling */
+     
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Chat history */
+.history {
+    margin-top: 50px;
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+/* Message boxes */
+.message_box {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.message_box.question_box {
+    background: #e1f5fe;
+    border: 1px solid #b3e5fc;
+    margin-left: 100px;
+}
+
+.message_box.answer_box {
+    background: #ffebee;
+    border: 1px solid #ffcdd2;
+    margin-right: 100px;
+}
+
+/* Icons for actions */
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.icon {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+/* Input area */
+.input-area {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+/* Style for the emoji button */
+#emojiButton {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px; /* Adds spacing between emoji button and send button */
+    
+}
+ 
+ #emojiPickerContainer {
+      
+    position: absolute;
+    top: 100%; /* Adjusted to position directly below the button */
+    left: 0;
+    z-index: 10000; /* Ensure it's above other elements */
+    
+    width: 300px; /* Adjust width as needed */
+    max-height: 400px; /* Adjust height if needed */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: white; /* Ensure it has a background */
+    pointer-events: auto; /* Ensure it can receive clicks */
+
+}   
+ 
+/* Ensure emoji-picker has a proper z-index */
+emoji-picker {
+    width: 300px;
+    display: none;
+    position: absolute; /* Ensure positioning */
+    z-index: 1000; /* Ensure it appears above other elements */
+    border: 1px solid red; /* Temporary border to visualize picker area */
+}
+
+
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25FDTpx;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#send-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#send-button:disabled {
+    background-color: #a5c6ff;
+    cursor: not-allowed;
+}
+
+/* Loading animation */
+.loading {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.load {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load h6 {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    background: #007bff;
+    border-radius: 50%;
+    animation: blink 1.4s infi  nite both;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+
+.session-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.session-name {
+    font-weight: bold;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: red;
+    font-size: 1.2em;
+}
+ 
+
+.edit-input {
+    width: 100%; /* Adjust the width to fit the container */
+    min-height: 100px; /* Minimum height */
+    max-height: none; /* Allow height to expand indefinitely */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    box-sizing: border-box; /* Include padding in width and height */
+    padding: 10px; /* Optional: Add some padding */
+    resize: none; /* Prevent manual resizing if desired */
+}

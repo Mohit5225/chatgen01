@@ -1,0 +1,89 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat Application</title>
+
+        <link rel="stylesheet" href="idk3.css">
+        <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.min.js"></script> -->
+
+
+    </head>
+
+    <body>
+        <div class="login-container">
+            <h1 class="login-title">Welcome Back!</h1>
+            <form id="login-form" class="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <p class="register-link">Don't have an account? <a href="#" id="register-link">Register here</a></p>
+        </div>
+
+        <div class="register-here" style="display: none;">
+            <h1 class="register-title">Create Account</h1>
+            <form id="register-form" class="register-form">
+                <div class="input-group">
+                    <label for="register-username">Username</label>
+                    <input type="text" id="register-username" name="register-username"
+                        placeholder="Enter username of your choice" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" name="register-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Password</label>
+                         <input type="password" id="register-password"
+                        name="register-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="register-button">Register</button>
+            </form>
+            <p class="toggle-form">Already have an account? <a href="#" id="login-link">Login here</a></p>
+        </div>
+
+        <div class="container" style="display: none;">
+            <div class="sidebar">
+                <button id="new-chat-button">New Session</button>
+                <button class="load-session-button">Load Sessions</button>
+                <div class="session-list"></div>
+            </div>
+            <div class="chat-container">
+                <div class="header">
+                    <button class="toggle-button">☰</button>
+                    <h1>ChatGen: Building a Sophisticated Conversational Agent</h1>
+                    <div class="loading"></div>
+                </div>
+                <div class="history"></div>
+
+            
+                <div class="input-area">
+                    <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                    <button id="emojiButton">😊</button>
+                    <emoji-picker id="emojiPickerContainer" style="display: none;"></emoji-picker> 
+                    <button id="send-button">Send</button>
+                </div>
+
+                
+            </div>
+        </div> 
+        <script src="idk3.js"></script>
+    
+
+        <script src="loginforidk3.js"></script>
+        <script src="registerforidk3.js"></script>
+        <script src="Loginidk3.js"></script>
+    
+        
+    </body>
+
+    </html>

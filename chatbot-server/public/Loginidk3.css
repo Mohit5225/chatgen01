@@ -1,0 +1,159 @@
+/* login.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for login form */
+.login-container {
+   margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    border: pink 2.5px solid ;
+}
+
+/* Login form title */
+.login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Anton', sans-serif;
+}
+
+/* Input styles */
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Login button */
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Register link */
+.register-link {
+    font-size: 14px;
+    color: #777;
+}
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+.register-link a:hover {
+    text-decoration: underline;
+}
+/* login.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('download.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    width : 600px ;
+}
+
+ .register-here{
+    
+    border: pink 2.5px solid ;
+    width : 550px;
+       height: 380px ;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    margin-bottom: -13%;
+ }
+.register-title{
+    color: black;
+     margin-left: 25%;
+        margin-bottom: 5px;
+
+}
+.register-button{
+    background-color: #007bff;
+    width: 60px;
+    height: 33px;
+    color : white ;
+    margin-left: 43%;   
+}
+.toggle-form{
+    padding-top: 3.3%;
+}
+ 
+.input-group{
+    color : pink ;
+}
+ 
+/* Targeting the label for the username field */
+label[for="register-username"] {
+    color: grey; /* Example color: orange-red */
+    max-width:  fit-content;
+    margin-left: 41%; 
+}
+
+
+/* Targeting the label for the email field */
+label[for="register-email"] {
+    color: grey; /* Example color: lime green */
+    margin-left: 45%; 
+    
+}
+
+/* Targeting the label for the password field */
+label[for="register-password"] {
+    color: grey; /* Example color: dodger blue */
+       margin-left: 43%; 
+}
+
+.register-link{
+    margin-top: 4%;
+}
+.toggle-form{
+    margin-left: 20% ;
+}
